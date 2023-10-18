@@ -1,0 +1,8 @@
+# Python virtual environment (venv)
+venv/
+venv-bak/
+
+# Add any other patterns to ignore specific virtual environment files
+# For example, to ignore .pyc and .pyo files generated within the venv, you can add:
+# *.pyc
+# *.pyo
