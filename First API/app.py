@@ -25,9 +25,13 @@ def Company():
 
 @app.post('/addCompany')
 def addCompany():
-  new_company = {'name': 'PBC BookStore', 'items': []}
-  companies.append(new_company)
-  return {'msg': 'successfully'}
+    new_company_data = request.get_json()
+
+    if not new_company_data:
+        return "Invalid JSON data", 400
+
+    companies.append(new_company_data)
+    return "Successfully added a new company", 200
 
   
 
